@@ -1,70 +1,61 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import Logo from "../../static/logo.png";
+import CartWidget from '../CartWidget/CartWidget';
 
 const NavBar = () => {
-  return (
-    <>
-      <nav class="navbar navbar-expand-md navbar-dark mb-4 colorNavBar">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img
-              alt=""
-              src={Logo}
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-            />
-          </a>
-
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto-right mb-2 mb-md-0">
-              <li class="nav-item estilo ">
-                <a aria-current="page" href="#">
-                  Inicio
-                </a>
-              </li>
-            </ul>
-
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                  Vehiculos
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Electronica
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Libros
-                </a>
-              </li>
-            </ul>
-            <div class="d-flex estilo">
-              <a class="btn-round" href="#">
-                Login
-              </a>
+    return (
+        <nav class="navbar navbar-expand-lg navbar-light shadow">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="navbar-brand text-success logo h1 align-self-center">Jassa</a>
+                <button
+                    class="navbar-toggler border-0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#templatemo_main_nav"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+                    id="templatemo_main_nav">
+                    <div class="flex-fill">
+                        <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar align-self-center d-flex">
+                        <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                            <div class="input-group">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="inputMobileSearch"
+                                    placeholder="Search ..."
+                                />
+                                <div class="input-group-text">
+                                    <i class="fa fa-fw fa-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <CartWidget />
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse"
-            aria-controls="navbarCollapse"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </nav>
-    </>
-  );
+        </nav>
+    );
 };
 
 export default NavBar;
