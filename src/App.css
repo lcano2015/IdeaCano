@@ -160,3 +160,30 @@ body, ul, li, p, a, label, input, div {
   
   /* Extra large devices (large desktops, 1200px and up)*/
   @media (min-width: 1200px) {}
+
+  .single-product-details .pd-content .p-qtn .product-quantity form {
+    border: 1px solid #B8B8B8;
+    max-width: 125px;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.product-quantity form .value-button {
+  display: inline-flex;
+  width: 40px;
+  cursor: pointer;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+}
+.product-quantity form #inputNumero {
+  border: none;
+  width: 75px;
+  text-align: center;
+  margin: 7px 5px;
+  color: #4E4E4E;
+  font-weight: 400;
+  font-size: 18px;
+  border-radius: 0px;
+}

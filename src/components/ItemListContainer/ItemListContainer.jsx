@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ItemCount from '../ItemCount/ItemCount';
 export default function ItemListContainer({greeting}) {
     return (
         <div>
@@ -9,6 +9,8 @@ export default function ItemListContainer({greeting}) {
                         <div class="col-lg-6 m-auto">
                             <h1 class="h1">Mensaje</h1>
                             <p>{greeting}</p>
+
+                            <ItemCount />
                         </div>
                     </div>
                 </div>
