@@ -10,7 +10,7 @@ export default function ItemListContainer({greeting}) {
                             <h1 class="h1">Mensaje</h1>
                             <p>{greeting}</p>
 
-                            <ItemCount />
+                            <ItemCount stock={5} initial={1} />
                         </div>
                     </div>
                 </div>

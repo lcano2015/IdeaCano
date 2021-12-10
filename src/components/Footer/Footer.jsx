@@ -8,7 +8,7 @@ export default function Footer() {
                     <div class="row pt-2">
                         <div class="col-12">
                             <p class="text-left text-light">
-                                Copyright &copy; 2021 Company DevNet |<a> Luis Cano</a>
+                                Copyright &copy; 2021 Company DevNet |<a>Luis Cano</a>
                             </p>
                         </div>
                     </div>
