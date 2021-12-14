@@ -21,29 +21,6 @@ const Item = ({item}) => {
                 </div>
             </div>
         </>
-
-        // <div classNameName="carousel-item">
-
-        //     <div classNameName="container">
-        //         <div classNameName="row p-5">
-        //             <div classNameName="mx-auto col-md-8 col-lg-6 order-lg-last">
-        //                 <img
-        //                     classNameName="img-fluid"
-        //                     src="https://therichpost.com/wp-content/uploads/2021/05/banner_img_02.jpg"
-        //                     alt=""
-        //                 />
-        //             </div>
-        //             <div classNameName="col-lg-6 mb-0 d-flex align-items-center">
-        //                 <div classNameName="text-align-left">
-        //                     <h1 classNameName="h1">{item.title}</h1>
-        //                     <h3 classNameName="h2">Lorem Ipsum Lorem Ipsum</h3>
-        //                     <p>{item.description}</p>
-        //                 </div>
-        //             </div>
-        //         </div>
-        //     </div>
-        //     <pre>{JSON.stringify(item)}</pre>
-        // </div>
     );
 };
 
